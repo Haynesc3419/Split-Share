@@ -1,0 +1,23 @@
+<div class="manage-workouts">
+  <div class="ss-component-header">
+    <div class="ss-title">Saved Workouts</div>
+    <button class='save-button' (click)="saveWorkout()">Add Workout</button>
+  </div>
+
+  <div class="ss-component-body">
+    <div class="model-grid">
+      <div class="grid-header" *ngFor="let header of columnHeaders">
+        {{header}}
+      </div>
+      <ng-container *ngFor="let item of savedWorkouts">
+        <div class="grid-item" *ngFor="let attr of processRowData(item)">
+          {{attr}}
+        </div>
+        <div class="grid-item">
+          <button (click)="editWorkout(item)">Edit</button>
+          <button (click)="removeWorkout(item.id)">Delete</button>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

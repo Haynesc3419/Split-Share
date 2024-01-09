@@ -1,0 +1,13 @@
+<div class="register">
+  <div class="register-container" [formGroup]="registerForm">
+    <h2>Create Account</h2>
+    <input formControlName="username" placeholder="Username">
+    <input formControlName="password" placeholder="Password">
+    <input formControlName="name" placeholder="Full Name">
+    <input type="date" formControlName="dob" placeholder="Date of Birth">
+    <p class="error" *ngIf="errorMessage.length > 0">{{errorMessage}}</p>
+    <button class="submit" (click)="submit()">Submit</button>
+    <a class='link-login' href="login"><p>Already have an account? Login here.</p></a>
+  </div>
+</div>
+

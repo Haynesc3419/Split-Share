@@ -1,0 +1,59 @@
+@import (reference) '../../../../styles';
+
+.manage-exercises {
+  min-height: 100vh;
+  height: fit-content;
+  background-color: @secondaryColorScheme;
+  flex-direction: column;
+  font-family: @globalFont;
+
+  .ss-component-header {
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+
+
+    .ss-title {
+      flex-grow: 6;
+      .header;
+    }
+
+    .save-button {
+      .btn-add
+    }
+  }
+
+  .ss-component-body {
+    overflow-y: scroll;
+
+    .model-grid {
+      padding-left: 10px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+
+      .grid-header {
+        font-size: 10px;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      .grid-item {
+        font-size: 10px;
+        padding: 10px;
+        border-bottom: 1px darkslategray solid;
+        display: inline-block;
+
+        button {
+          width: min-content;
+        }
+
+        button + button {
+          display: inline-block;
+          margin-left: 5px;
+        }
+      }
+    }
+
+  }
+}

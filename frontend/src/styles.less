@@ -1,0 +1,97 @@
+@primaryColorScheme: #708090;
+@secondaryColorScheme: #F0F8FF;
+@globalFont: Arial, sans-serif;
+
+.page {
+  min-height: 100vh;
+  height: fit-content;
+  background-color: @secondaryColorScheme;
+  flex-direction: column;
+  font-family: @globalFont;
+  margin-top: 0;
+}
+
+/* Styling for navbar links */
+.link-nav {
+  color: @secondaryColorScheme;
+  text-decoration: none; /* No underline */
+  font-family: @globalFont;
+}
+
+/* Styling for section headers on every page */
+.header {
+  font-size: 1em; /* Large font size */
+  color: @primaryColorScheme; /* Dark Slate Grey */
+  font-family: Arial, sans-serif; /* Consistent font */
+}
+
+/* Styling for the submit button in form modals */
+.btn-submit {
+  background-color: @secondaryColorScheme;
+  color: @primaryColorScheme;
+  border: @primaryColorScheme 1px 1px;
+  border-radius: 5px;
+  cursor: pointer; /* Cursor changes when hovering */
+  font-family: @globalFont;
+
+  &:hover {
+    background-color: darken(@primaryColorScheme, 10%);
+  }
+}
+
+/* Styling for the add item button in the form */
+.btn-add {
+  background-color: @secondaryColorScheme;
+  color: @primaryColorScheme;
+  border: @primaryColorScheme 1px 1px;
+  font-size: medium;
+  border-radius: 5px;
+  cursor: pointer; /* Cursor changes when hovering */
+  font-family: @globalFont;
+
+  &:hover {
+    background-color: darken(@primaryColorScheme, 10%);
+  }
+}
+
+/* Styling for the remove item button in the form */
+.btn-remove {
+  background-color: darkred; /* Red */
+  color: black; /* White text color */
+  border: black 2px; /* No border */
+  height: 20px;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 10pt;
+  cursor: pointer; /* Cursor changes when hovering */
+  font-family: @globalFont; /* Consistent font */
+
+  &:hover {
+    background-color: darken(darkred, 10%);
+  }
+}
+
+/* Styling for the smaller input box in the form */
+.input-small {
+  width: 50%; /* Half-width input */
+  font-family: @globalFont;
+}
+
+/* Styling for the larger input box in the form */
+.input-large {
+  width: 100%; /* Full-width input */
+  font-family: @globalFont;
+}
+
+.btn-generic-tool {
+  padding: 10px 20px;
+  background-color: @primaryColorScheme;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(darkslategray, 10%);
+  }
+}

@@ -1,0 +1,17 @@
+<div class="profile-page" *ngIf="user">
+  <div class="user-header">
+    <div class="user-header-name">{{user.name}}</div>
+    <div class="user-header-content">
+      <span>Following:    {{user.following ? user.following.length : 0}}</span>
+      <span>Followers:    {{user.followers ? user.followers.length : 0}}</span>
+    </div>
+  </div>
+
+  <div class="user-info">
+    <img class="user-photo" ngSrc='{{userPhoto}}' height="681" width="820" priority="true">
+    <div>
+      <button class="manage-button"><a class='link' href="/workouts">Saved Workouts</a></button>
+      <button class="manage-button"><a class='link' href="/exercises">Saved Exercises</a></button>
+    </div>
+  </div>
+</div>

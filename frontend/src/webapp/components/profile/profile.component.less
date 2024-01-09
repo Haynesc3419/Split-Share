@@ -1,0 +1,60 @@
+.profile-page {
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: aliceblue;
+  flex-grow: 1;
+  flex-direction: column;
+
+  .user-header {
+    width: 100%;
+    display: flex;
+    padding: 10px 10px 0 20px;
+    place-items: center;
+
+    .user-header-name {
+      font-size: x-large;
+      font-weight: bolder;
+      flex-grow: 9;
+    }
+
+    .user-header-content {
+      flex-grow: 1;
+      font-weight: bold;
+
+      span + span {
+        padding-left: 50px
+      }
+
+    }
+
+  }
+
+
+  .user-info {
+    display: grid;
+    padding: 10px 10px 10px 10px;
+
+    .user-info-content {
+      padding: 5px 5px 5px 5px;
+    }
+
+    .user-photo {
+      width: 30vh;
+      height: inherit;
+      border-radius: 5vh;
+    }
+
+  }
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .manage-button {
+    display: inline-grid;
+    width: 20vh;
+  }
+}
+
+

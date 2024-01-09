@@ -1,0 +1,12 @@
+<div class="save-exercise-modal">
+  <div class="modal-title">Add Exercise</div>
+  <div [formGroup]=exerciseForm class="exercise-form">
+    <input formControlName="name"  placeholder="exercise name">
+    <input formControlName="description" placeholder="exercise description">
+    <input formControlName="setRangeBottom" placeholder="Set Bottom Range">
+    <input formControlName="setRangeTop" placeholder="Set Top Range">
+    <input formControlName="repRangeBottom" placeholder="Rep Bottom Range">
+    <input formControlName="repRangeTop" placeholder="Rep Top Range">
+  </div>
+  <button class="submit" (click)="submit()">Save Exercise</button>
+</div>

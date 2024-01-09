@@ -1,0 +1,9 @@
+<div class="login">
+    <div class="login-container" [formGroup]="loginForm">
+      <h2>Login</h2>
+      <input formControlName="username" placeholder="username">
+      <input formControlName="password" placeholder="password">
+      <button (click)="submit()" class="submit">Submit</button>
+      <a class='link-register' href="register"><p>Don't have an account? Register here.</p></a>
+    </div>
+</div>
